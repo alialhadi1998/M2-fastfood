@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M2 Fast Food</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cartCount">0</span>
+</div>
+
+
+
+<div id="cartPanel" class="cart-panel">
+
+    <h2>سلة التسوق</h2>
+
+    <div id="cartItems"></div>
+
+    <h3>
+        المجموع:
+        <span id="totalPrice">0</span>
+        د.ع
+    </h3>
+
+    <button class="send-btn" onclick="sendOrder()">
+        إتمام الطلب
+    </button>
+
+</div>
+<header>
+    <div class="hero"></div>
+
+   
+    <h1>M2 FAST FOOD</h1>
+
+ <div class="search-box">
+
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="ابحث عن وجبة...">
+
+    <button onclick="searchFood()"
+    class="search-btn">
+        🔍 بحث
+    </button>
+
+</div>
+</header>
+
+<h2 class="section-title">🍔 البركر</h2>
+
+<section class="menu">
+    <div class="cart">
+    🛒 <span id="cartCount">0</span>
+</div>
+
+<div class="food-item">
+
+    <h3>بركر كلاسك لحم</h3>
+
+    <p>3,000 د.ع</p>
+
+    <button class="cart-btn"
+    onclick="addToCart('بركر كلاسك لحم',3000)">
+    اضف الى السلة
+    </button>
+
+</div>
+
+</div>
+
+<div class="food-item">
+ <h3>بركر كلاسك لحم بالجبن </h3>
+
+    <p>3,500 د.ع</p>
+
+    <button class="cart-btn"
+    onclick="addToCart('بركر كلاسك لحم بالجبن ',3,500)">
+    اضف الى السلة
+    </button>
+
+
+</div>
+
+<div class="food-item">
+    <h3>بركر لحم مشروم جبن</h3>
+    <p>5,000 د.ع</p>
+
+     <button class="cart-btn"
+    onclick="addToCart('بركر لحم مشروم بالجبن ',3,500)">
+    اضف الى السلة
+    </button>
+
+</div>
+
+<div class="food-item">
+    <h3>بركر لحم سبيشل</h3>
+    <p>6,000 د.ع</p>
+    <a href="https://wa.me/9647819118161">اطلب الآن</a>
+</div>
+
+</section>
+
+<h2 class="section-title">🍕 البيتزا</h2>
+
+<section class="menu">
+
+<div class="food-item">
+    <h3>بيتزا لحم صغير</h3>
+    <p>5,000 د.ع</p>
+    <a href="https://wa.me/9647819118161">اطلب الآن</a>
+</div>
+
+<div class="food-item">
+    <h3>بيتزا دجاج صغير</h3>
+    <p>5,000 د.ع</p>
+    <a href="https://wa.me/9647819118161">اطلب الآن</a>
+</div>
+
+<div class="food-item">
+    <h3>بيتزا خضار صغير</h3>
+    <p>5,000 د.ع</p>
+    <a href="https://wa.me/9647819118161">اطلب الآن</a>
+</div>
+
+</section>
+
+<h2 class="section-title">🍖 المندي</h2>
+
+<section class="menu">
+
+    
+
+    <div class="food-item">
+        <h3>حبة مندي دجاج</h3>
+        <p>20,000 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('حبة مندي دجاج',20000)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+    <div class="food-item">
+        <h3>نصف حبة مندي دجاج</h3>
+        <p>10,000 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('نصف حبة مندي دجاج',10000)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+</section>
+
+</div>
+
+<h2 class="section-title">🥤 المشروبات</h2>
+
+<section class="menu">
+
+    <div class="food-item">
+        <h3>بيبسي</h3>
+        <p>500 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('بيبسي',500)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+    <div class="food-item">
+        <h3>سفن أب</h3>
+        <p>500 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('سفن أب',500)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+    <div class="food-item">
+        <h3>ميرندا</h3>
+        <p>500 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('ميرندا',500)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+    
+    <div class="food-item">
+        <h3>بيبسي عائلي</h3>
+        <p>1000 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('بيبسي عائلي',1000)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+</section>
+
+
+
+<h2 class="section-title">🍟 المقبلات</h2>
+
+<section class="menu">
+
+    <div class="food-item">
+        <h3>مقبلات صغير</h3>
+        <p>3,000 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('مقبلات صغير',3000)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+    <div class="food-item">
+        <h3>مقبلات وسط</h3>
+        <p>4,000 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('مقبلات وسط',4000)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+    <div class="food-item">
+        <h3>مقبلات كبير</h3>
+        <p>5,000 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('مقبلات كبير',5000)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+    <div class="food-item">
+        <h3>مقبلات السايز</h3>
+        <p>3,500 د.ع</p>
+
+        <button class="cart-btn"
+        onclick="addToCart('مقبلات السايز',3500)">
+            أضف إلى السلة
+        </button>
+    </div>
+
+</section>
+
+<button class="checkout-btn" onclick="sendOrder()">
+    🛒 إتمام الطلب
+</button>
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
